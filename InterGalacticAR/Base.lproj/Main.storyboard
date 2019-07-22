@@ -14,7 +14,53 @@
                     <view key="view" contentMode="scaleToFill" id="v84-0f-tdH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="V0f-tY-hlx">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="planetCell" rowHeight="200" id="pg1-8U-0kn" customClass="PlanetCell" customModule="InterGalacticAR" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pg1-8U-0kn" id="uMK-0j-Tir">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earth_daymap" translatesAutoresizingMaskIntoConstraints="NO" id="l8M-dg-9QD">
+                                                    <rect key="frame" x="8" y="0.0" width="398" height="192"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ChK-Zk-STt">
+                                                    <rect key="frame" x="20" y="64" width="374" height="72"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="l8M-dg-9QD" firstAttribute="leading" secondItem="uMK-0j-Tir" secondAttribute="leading" constant="8" id="6bI-lH-uYu"/>
+                                                <constraint firstItem="ChK-Zk-STt" firstAttribute="centerY" secondItem="uMK-0j-Tir" secondAttribute="centerY" id="Lk5-s1-DGU"/>
+                                                <constraint firstAttribute="trailing" secondItem="l8M-dg-9QD" secondAttribute="trailing" constant="8" id="Vgs-W5-FMq"/>
+                                                <constraint firstAttribute="bottom" secondItem="l8M-dg-9QD" secondAttribute="bottom" constant="8" id="bUe-zE-P2L"/>
+                                                <constraint firstItem="ChK-Zk-STt" firstAttribute="leading" secondItem="uMK-0j-Tir" secondAttribute="leading" constant="20" id="din-bA-E1h"/>
+                                                <constraint firstAttribute="trailing" secondItem="ChK-Zk-STt" secondAttribute="trailing" constant="20" id="iOc-4Y-lVs"/>
+                                                <constraint firstItem="l8M-dg-9QD" firstAttribute="top" secondItem="uMK-0j-Tir" secondAttribute="top" id="omc-On-jk3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="planetImage" destination="l8M-dg-9QD" id="sId-c5-ktf"/>
+                                            <outlet property="planetLabel" destination="ChK-Zk-STt" id="7vr-zh-bWu"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="V0f-tY-hlx" firstAttribute="top" secondItem="tvh-a5-03w" secondAttribute="top" id="8h7-iO-vp2"/>
+                            <constraint firstItem="tvh-a5-03w" firstAttribute="bottom" secondItem="V0f-tY-hlx" secondAttribute="bottom" id="fci-xI-16p"/>
+                            <constraint firstItem="V0f-tY-hlx" firstAttribute="leading" secondItem="tvh-a5-03w" secondAttribute="leading" id="sqS-c6-ht4"/>
+                            <constraint firstItem="tvh-a5-03w" firstAttribute="trailing" secondItem="V0f-tY-hlx" secondAttribute="trailing" id="u0M-y8-9ks"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tvh-a5-03w"/>
                     </view>
                     <connections>
@@ -34,7 +80,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                             </arscnView>
                         </subviews>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -55,4 +101,7 @@
             <point key="canvasLocation" x="-64" y="108"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="earth_daymap" width="2048" height="1024"/>
+    </resources>
 </document>

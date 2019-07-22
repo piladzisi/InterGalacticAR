@@ -14,6 +14,7 @@
 		4F4527CB22E64639006E0096 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F4527CA22E64639006E0096 /* Assets.xcassets */; };
 		4F4527CE22E64639006E0096 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4527CC22E64639006E0096 /* LaunchScreen.storyboard */; };
 		4F4527D622E646D7006E0096 /* PlanetSelectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4527D522E646D7006E0096 /* PlanetSelectorVC.swift */; };
+		4F48160822E64C1F00503EB1 /* PlanetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F48160722E64C1F00503EB1 /* PlanetCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4F4527CD22E64639006E0096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F4527CF22E64639006E0096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F4527D522E646D7006E0096 /* PlanetSelectorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetSelectorVC.swift; sourceTree = "<group>"; };
+		4F48160722E64C1F00503EB1 /* PlanetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				4F4527D722E646DB006E0096 /* Model */,
-				4F4527D922E646E6006E0096 /* Controller */,
 				4F4527D822E646E1006E0096 /* View */,
+				4F4527D922E646E6006E0096 /* Controller */,
 				4F4527C122E64638006E0096 /* AppDelegate.swift */,
 				4F4527C722E64638006E0096 /* Main.storyboard */,
 				4F4527CA22E64639006E0096 /* Assets.xcassets */,
@@ -81,8 +83,7 @@
 		4F4527D822E646E1006E0096 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4F4527C522E64638006E0096 /* MainVC.swift */,
-				4F4527D522E646D7006E0096 /* PlanetSelectorVC.swift */,
+				4F48160722E64C1F00503EB1 /* PlanetCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -90,6 +91,8 @@
 		4F4527D922E646E6006E0096 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4F4527C522E64638006E0096 /* MainVC.swift */,
+				4F4527D522E646D7006E0096 /* PlanetSelectorVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				4F4527D622E646D7006E0096 /* PlanetSelectorVC.swift in Sources */,
 				4F4527C622E64638006E0096 /* MainVC.swift in Sources */,
 				4F4527C222E64638006E0096 /* AppDelegate.swift in Sources */,
+				4F48160822E64C1F00503EB1 /* PlanetCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
