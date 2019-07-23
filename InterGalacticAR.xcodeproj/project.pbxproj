@@ -9,25 +9,27 @@
 /* Begin PBXBuildFile section */
 		4F4527C222E64638006E0096 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4527C122E64638006E0096 /* AppDelegate.swift */; };
 		4F4527C422E64638006E0096 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F4527C322E64638006E0096 /* art.scnassets */; };
-		4F4527C622E64638006E0096 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4527C522E64638006E0096 /* MainVC.swift */; };
+		4F4527C622E64638006E0096 /* PlanetViewerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4527C522E64638006E0096 /* PlanetViewerVC.swift */; };
 		4F4527C922E64638006E0096 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4527C722E64638006E0096 /* Main.storyboard */; };
 		4F4527CB22E64639006E0096 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F4527CA22E64639006E0096 /* Assets.xcassets */; };
 		4F4527CE22E64639006E0096 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4527CC22E64639006E0096 /* LaunchScreen.storyboard */; };
 		4F4527D622E646D7006E0096 /* PlanetSelectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4527D522E646D7006E0096 /* PlanetSelectorVC.swift */; };
 		4F48160822E64C1F00503EB1 /* PlanetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F48160722E64C1F00503EB1 /* PlanetCell.swift */; };
+		4F48160A22E6DBCC00503EB1 /* PlanetsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F48160922E6DBCC00503EB1 /* PlanetsSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4F4527BE22E64638006E0096 /* InterGalacticAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterGalacticAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F4527C122E64638006E0096 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F4527C322E64638006E0096 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		4F4527C522E64638006E0096 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		4F4527C522E64638006E0096 /* PlanetViewerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetViewerVC.swift; sourceTree = "<group>"; };
 		4F4527C822E64638006E0096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F4527CA22E64639006E0096 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F4527CD22E64639006E0096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F4527CF22E64639006E0096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F4527D522E646D7006E0096 /* PlanetSelectorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetSelectorVC.swift; sourceTree = "<group>"; };
 		4F48160722E64C1F00503EB1 /* PlanetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCell.swift; sourceTree = "<group>"; };
+		4F48160922E6DBCC00503EB1 /* PlanetsSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		4F4527D722E646DB006E0096 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4F48160922E6DBCC00503EB1 /* PlanetsSource.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -91,7 +94,7 @@
 		4F4527D922E646E6006E0096 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4F4527C522E64638006E0096 /* MainVC.swift */,
+				4F4527C522E64638006E0096 /* PlanetViewerVC.swift */,
 				4F4527D522E646D7006E0096 /* PlanetSelectorVC.swift */,
 			);
 			path = Controller;
@@ -170,7 +173,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F4527D622E646D7006E0096 /* PlanetSelectorVC.swift in Sources */,
-				4F4527C622E64638006E0096 /* MainVC.swift in Sources */,
+				4F4527C622E64638006E0096 /* PlanetViewerVC.swift in Sources */,
+				4F48160A22E6DBCC00503EB1 /* PlanetsSource.swift in Sources */,
 				4F4527C222E64638006E0096 /* AppDelegate.swift in Sources */,
 				4F48160822E64C1F00503EB1 /* PlanetCell.swift in Sources */,
 			);
